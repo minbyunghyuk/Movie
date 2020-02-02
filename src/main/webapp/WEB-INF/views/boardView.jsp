@@ -10,7 +10,7 @@
     <!-- BootStrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <title>게시글 상세</title>
+    <title>게시글 상세보기</title>
 </head>
 <body>
 <h3>게시글 상세</h3>

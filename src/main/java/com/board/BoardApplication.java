@@ -7,7 +7,6 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jersey.JerseyProperties.Filter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -20,7 +19,6 @@ public class BoardApplication {
     public static void main(String[] args) {
         SpringApplication.run(BoardApplication.class, args);
     }
-
     /**
      * SqlSessionFactory 설정
      */
@@ -35,7 +33,6 @@ public class BoardApplication {
 
         return sessionFactory.getObject();
     }
-
     /**
      * HiddenHttpMethodFilter
      */

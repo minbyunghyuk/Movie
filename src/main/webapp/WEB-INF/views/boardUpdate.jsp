@@ -17,7 +17,8 @@
 <body>
 <h3>게시글 수정</h3>
 <div style="padding : 30px;">
-    <form:form commandName="BoardVO" action="/board/post/${board.bno}" method="PATCH">
+    <!--commandline -> modelAttribute 수정  -->
+    <form:form modelAttribute="BoardVO" action="/board/post/${board.bno}" method="PATCH">
         <div class="form-group">
             <label>제목</label>
             <input type="text" name="subject" value="${board.subject}" class="form-control">

@@ -4,6 +4,8 @@ import com.board.domain.BoardVO;
 
 public interface BoardMapper {
 
+
+
     //글작성
     public void boardInsert(BoardVO vo)throws Exception;
 

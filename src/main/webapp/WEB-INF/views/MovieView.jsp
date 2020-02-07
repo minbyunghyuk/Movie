@@ -13,10 +13,11 @@
     <title>추천 목록</title>
 </head>
 <body>
-<c:forEach var="Movie" items="${list}">
-<h3>${Movie.name}님의 추천 목록</h3>
-<div style="padding : 30px;">
 
+
+<c:forEach var="Movie" items="${list}">
+<div style="padding : 30px;">
+         <c:if test="${Movie.score >'5'}" >
         <div class="form-group">
             <label>제목</label>
             <span>${Movie.title}</span>
@@ -25,9 +26,10 @@
             <label>평점</label>
             <span>${Movie.score}</span>
         </div>
+         </c:if>
     </c:forEach>
     <div class="form-group">
-        <input type="button" value="목록" onclick='location.href="/board"'>
+        <input type="button" value="목록" onclick='location.href="/movie"'>
     </div>
 </div>
 </body>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.board.mapper.MovieMapper">
+
+    <select id="MovieList" resultType="com.board.domain.MovieVO">
+        select * from m_score
+    </select>
+
+    <select id="find" parameterType="String" resultType="com.board.domain.MovieVO">
+        SELECT * From m_score WHERE NAME =#{name}  ORDER BY score DESC;
+    </select>
+
+
+
+
+</mapper>

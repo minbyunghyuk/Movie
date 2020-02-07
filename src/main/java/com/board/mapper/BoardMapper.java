@@ -11,7 +11,6 @@ public interface BoardMapper {
 
     //글목록
     public List<BoardVO> boardList()throws Exception;
-
     //글보기
     public BoardVO boardView(int bno)throws Exception;
 

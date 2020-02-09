@@ -7,7 +7,16 @@ public class MovieVO {
     private int idx;
     private String title;
     private String name;
+    private String Link;
     private double score;
+
+    public String getLink() {
+        return Link;
+    }
+
+    public void setLink(String link) {
+        Link = link;
+    }
 
     public int getIdx() {
         return idx;

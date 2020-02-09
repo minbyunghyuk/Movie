@@ -12,9 +12,13 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 
+
+
 @SpringBootApplication
 @MapperScan(value = {"com.board.mapper"})
 public class BoardApplication {
+
+
 
     public static void main(String[] args) {
         SpringApplication.run(BoardApplication.class, args);
@@ -41,6 +45,9 @@ public class BoardApplication {
         HiddenHttpMethodFilter filter = new HiddenHttpMethodFilter();
         return filter;
     }
+
+
+
 
 }
 

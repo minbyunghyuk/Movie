@@ -10,7 +10,8 @@
     </select>
 
     <select id="find" parameterType="String" resultType="com.board.domain.MovieVO">
-        SELECT * From m_score WHERE NAME =#{name}  ORDER BY score DESC;
+        SELECT DISTINCT * From m_score WHERE NAME = #{name} ORDER BY score DESC LIMIT 10;
+        <!--SELECT title FROM m_score WHERE NAME =#{name}   ORDER BY score DESC; -->
     </select>
 
 

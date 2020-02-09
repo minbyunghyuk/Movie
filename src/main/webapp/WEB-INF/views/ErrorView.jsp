@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -36,34 +35,11 @@
 </head>
 <body>
 <div class="ui large form">
-    <div class="ui stacked segment">
-        <button class="ui fluid  teal submit button">추천 리스트</button>
-
-        <table class="type11" >
-            <c:forEach var="Movie" items="${list}" varStatus="Status">
-                <c:if test="${Status.count < 6}">
-
-                    <td>${Movie.title}${Movie.link} </td>
-                </c:if>
-            </c:forEach>
-        </table>
-        <table class="type11" >
-            <c:forEach var="Movie" items="${list}" varStatus="Status">
-                <c:if test="${Status.count >=6 }">
-                    <td>${Movie.title}${Movie.link} </td>
-                </c:if>
-            </c:forEach>
-        </table>
-
-
-    </div>
+  <h3 class="ui teal image header"> 존재하지 않는 사용자 입니다.</h3>
 </div>
 
-
 <div class="form-group">
-    <a href="${pageContext.request.contextPath}/movie">
-        <button class="ui fluid large teal submit button">Main으로 이동</button>
-    </a>
+    <a href="${pageContext.request.contextPath}/movie"><button class="ui fluid large teal submit button">Main으로 이동</button></a>
 </div>
 
 </body>

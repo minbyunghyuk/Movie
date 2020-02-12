@@ -35,27 +35,26 @@
     </style>
 </head>
 <body>
+
+
+
 <div class="ui large form">
     <div class="ui stacked segment">
         <button class="ui fluid  teal submit button">추천 리스트</button>
-
-        <table class="type11" >
+        <table class = type11>
             <c:forEach var="Movie" items="${list}" varStatus="Status">
-                <c:if test="${Status.count < 6}">
-
-                    <td>${Movie.title}${Movie.link} </td>
+                <c:if test="${Status.count<6}">
+                    <td class ="type11"><p>${Status.count}${". "}${Movie.title}</p> ${Movie.link}</td>
                 </c:if>
             </c:forEach>
         </table>
-        <table class="type11" >
+        <table class = type11>
             <c:forEach var="Movie" items="${list}" varStatus="Status">
-                <c:if test="${Status.count >=6 }">
-                    <td>${Movie.title}${Movie.link} </td>
+                <c:if test="${Status.count>=6}">
+                    <td class ="type11"><p>${Status.count}${". "}${Movie.title}</p> ${Movie.link}</td>
                 </c:if>
             </c:forEach>
         </table>
-
-
     </div>
 </div>
 
